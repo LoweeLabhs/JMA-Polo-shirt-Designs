@@ -19,9 +19,11 @@ body
 .box2
 {
     position: absolute;
-    top: 30px;
-    left: 300px;
+    top: 15px;
+    left: 200px;
     transform-style: preserve-3d;
+    display: flexbox;
+    
 }
 .box2::before
 
@@ -33,34 +35,38 @@ body
 
 
 
-
-
-
 .heading
 {
     position: absolute;
-    top: 250px;
+    top: 100px;
     left: 80px;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     color: #fff;
     font-style: italic;
     opacity: 1;
+   
 }
+
+
+
+
 .heading2
 {
     position: absolute;
-    top: 400px;
+    top: 250px;
     left: 80px;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     color: 	#D22B2B;
     font-style: italic;
     opacity: 1;
 }
+
 .container
 {
     position: relative;
+    top: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +74,29 @@ body
     width: 1200px;
     transform-style: preserve-3d;
 }
-.container .box
+.container2
+{
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+.container3
+{
+    position: relative;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+.container .box, .container2 .box, .container3 .box
 {
     position: relative;
     width: 300px;
@@ -141,7 +169,7 @@ body
     text-decoration: none;
     transition: 0.5s;
     opacity: 0;
-    z-index: 10;
+    z-index: 11;
 }
 .container .box:hover .buy
 {
@@ -182,15 +210,20 @@ body
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .buy
 {
-    background: #D22B2B;
+    background: #b99700;
 }
 .container .box:nth-child(2) .circle,
 .container .box:nth-child(2) .buy
 {
-    background: #D22B2B;
+    background: #b99700;
 }
 .container .box:nth-child(2) .circle,
 .container .box:nth-child(2) .buy
 {
-    background: #D22B2B;
+    background: #b99700;
+}
+
+.container .box:nth-child(1) .buy
+{
+    background: #af1010;
 }
